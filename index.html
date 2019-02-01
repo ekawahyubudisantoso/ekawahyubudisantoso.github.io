@@ -6,7 +6,7 @@
     <link rel="icon" href="assets/fav/favicon.ico">
     <link rel="canonical" href="https://ekawahyubudisantoso.web.id/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
-    <script async src="https://cdn.ampproject.org/v0.js"></script>
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
     <style amp-custom>
       body { background: #eee; margin:0; font-family: 'Nunito', sans-serif; }
@@ -26,136 +26,34 @@
       .sidebar .widget p { font-size: 14px; }
       .sidebar .widget p:last-child { margin:0; }
 			.blog { float:left; }
-			.conteudo { width:600px; padding:25px; margin:25px auto; background: #fff;
-	border:1px solid #dedede;
-	-webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	-moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-	box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35);
-}
-
-.conteudo img {
-	min-width: 650px;
-	margin:0 0 25px -25px;
-	max-width: 650px;
-}
-
-.conteudo h1 {
-	padding:0;
-	margin:0 0 15px;
-	font-weight: bold;
-	color: #666;
-}
-
-.conteudo p:last-child {
-	margin: 0;
-}
-
-.conteudo .continue-lendo {
-	color:#000;
-	transition: all 0.5s ease;
-	text-decoration: none;
-	font-weight: 700; 
-}
-
-.conteudo .continue-lendo:hover {
-	margin-left:10px;
-}
-
-.post-info {
-	float: right;
-	font-size: 12px;
-	margin: -10px 0 15px;
-	text-transform: uppercase;
-}
-
-@media screen and (max-width: 960px) {
-
-	.header {
-		position:inherit;
-	}
-
-	.wrap {
-		width: 90%;
-		margin:25px auto;
-	}
-	.sidebar {
-		width:100%;
-		margin:25px 0 0;
-		float:right;
-	}
-
-	.sidebar .widget {
-		padding:5%;
-	}
-
-	nav.menu ul {
-		width: 100%;
-	}
-
-	nav.menu ul {
-		float:inherit;
-	}
-
-	nav.menu ul li {
-		float:inherit;
-		margin:0;
-	}
-
-	nav.menu ul a {
-		padding:15px;
-		font-size: 16px;
-		border-top:1px solid #1abf9f;
-		border-bottom:1px solid #074639;
-	}
-
-	.blog {
-		width:90%;
-	}
-
-	.conteudo {
-		float:inherit;
-		margin:0 auto 25px;
-		width:101%;
-		border:1px solid #dedede;
-		padding:5%;  
-		background: #fff;
-	}
-
-	.conteudo img {
-		max-width: 110%;
-		margin:0 0 25px -5%;
-		min-width: 110%;
-	}
-
-	.conteudo .continue-lendo:hover {
-		margin-left:0;
-	}
-
-
-}
-
-@media screen and (max-width: 460px) {
-
-	nav.menu ul a {
-		padding:15px;
-		font-size: 14px;
-	}
-
-	.sidebar {
-		display:none
-	}
-	.post-info {
-		display:none;
-	}
-
-	.conteudo {
-		margin:25px auto;
-	}
-
-	.conteudo img {
-		margin:-5% 0 25px -5%;
-	}			
-}
+			.conteudo { width:600px; padding:25px; margin:25px auto; background: #fff; border:1px solid #dedede; -webkit-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35); -moz-box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35); box-shadow: 1px 1px 1px 0px rgba(204,204,204,0.35); }
+			.conteudo amp-img { min-width: 450px; margin: 0 0 25px -25px; max-width: 450px; }
+			.conteudo h1 { padding:0; margin:0 0 15px; font-weight: bold; color: #666; }
+			.conteudo p:last-child { margin: 0; }
+			.conteudo .continue-lendo { color:#000; transition: all 0.5s ease; text-decoration: none; font-weight: 700; }
+			.conteudo .continue-lendo:hover { margin-left:10px; }
+			.post-info { float: right; font-size: 12px; margin: -10px 0 15px; text-transform: uppercase; }
+			@media screen and (max-width: 960px) {
+				.header { position:inherit; }
+				.wrap { width: 90%; margin:25px auto; }
+				.sidebar { width:100%; margin:25px 0 0; float:right; }
+				.sidebar .widget { padding:5%; }
+				nav.menu ul { width: 100%; }
+				nav.menu ul { float:inherit; }
+				nav.menu ul li { float:inherit; margin:0; }
+				nav.menu ul a { padding:15px; font-size: 16px; border-top:1px solid #1abf9f; border-bottom:1px solid #074639; }
+				.blog { width:90%; }
+				.conteudo { float:inherit; margin:0 auto 25px; width:101%; border:1px solid #dedede; padding:5%; background: #fff; }
+				.conteudo amp-img { max-width: 80%; margin:0 0 25px 0; min-width: 80%; }
+				.conteudo .continue-lendo:hover { margin-left:0; }
+			}
+			@media screen and (max-width: 460px) {
+				nav.menu ul a { padding:15px; font-size: 14px; }
+				.sidebar { display:none }
+				.post-info { display:none; }
+				.conteudo { margin:25px auto; }
+				.conteudo amp-img { min-width: 10%; margin:0 0 25px 0; max-width: 10%; }
+			}
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
@@ -198,13 +96,13 @@
         </div>
       </aside>
       <!-- SIDEBAR -->
-      		<!-- bagian konten Blog -->
-		<div class="blog">
+      <!-- bagian konten Blog -->
+		  <div class="blog">
         <div class="conteudo">
           <div class="post-info">
             Di Posting Oleh <b>Eka Wahyu Budi Santoso</b>
           </div>
-          <img src="https://www.malasngoding.com/wp-content/uploads/2016/02/tutorial-css-bahasa-indonesia.png">
+          <amp-img alt="Template Sederhana HTML & CSS" src="https://www.malasngoding.com/wp-content/uploads/2016/02/tutorial-css-bahasa-indonesia.png" width="650" height="407" layout="responsive"></amp-img>
           <h1> Template Sederhana HTML & CSS </h1>
           <hr>
           <p>
@@ -216,7 +114,7 @@
           <div class="post-info">
             Di Posting Oleh <b>Eka Wahyu Budi Santoso</b>
           </div>
-          <img src="https://www.malasngoding.com/wp-content/uploads/2016/02/tutorial-html-bahasa-indonesia.png">
+          <amp-img alt="Belajar HTML Lengkap" src="https://www.malasngoding.com/wp-content/uploads/2016/02/tutorial-html-bahasa-indonesia.png" width="650" height="407" layout="responsive"></amp-img>
           <h1> Belajar HTML Lengkap </h1>
           <hr>
           <p>

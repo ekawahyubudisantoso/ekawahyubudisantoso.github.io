@@ -18,12 +18,12 @@
     <meta content='id' name='geo.country'/>
     <meta content='global' name='distribution'/>
     <meta content='indonesian' name='language'/>
-		<script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,400i,700" rel="stylesheet">
     <style amp-custom>
       body {
         margin:0;
-        padding:2em;
+        padding:0;
         background: #4a00fb;
         background: -moz-linear-gradient(45deg, #4a00fb 0%, #e600ff 100%);
         background: -webkit-linear-gradient(45deg, #4a00fb 0%,#e600ff 100%);
@@ -33,21 +33,25 @@
         background-attachment: fixed;
         font-family:'Nunito',sans-serif;
       }
-      header {
-        float: left;
-        width:30%;
-      }
-      header h1{
-        color:white;
-        font-size: 30px;
-        margin: 0;
-        padding: 15px 16px;
-        top: 0;
-      }
       nav{
         float:left;
-        width:70%;
+        padding: 2em;
       }
+      nav amp-img{
+        cursor: pointer;
+      }
+      header {
+        float: left;
+        padding: 2em;
+      }
+      header h1{
+        font-size: 18px;
+        color:white;
+        margin: 0;
+        top: 0;
+      }
+      
+
       ul{
         float:right;
         list-style-type: none;
@@ -63,28 +67,18 @@
         text-decoration: none;
         padding: 14px 16px;
       }
-
       li a:hover{
         border-bottom: 2px solid #fff;
       }
-			@media only screen and (min-width: 960px) {
-			}
-			@media only screen and (min-width: 460px) {
-			}
     </style>
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   </head>
   <body>
+    <nav>
+        <amp-img src="assets/img/menu.svg" width="30px" height="30px"></amp-img>
+    </nav>
     <header>
       <h1 class="judul">Eka Wahyu Budi Santoso</h1>
     </header>
-    <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Blog</a></li>
-        </ul>
-    </nav>
   </body>
 </html>

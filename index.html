@@ -22,21 +22,36 @@
   <script src="main.js"></script>
   </head>
   <body>
-    <header>
-      <div class="judul">
-        <h1><a href="https://www.ekawahyubudisantoso.web.id/">Eka Wahyu Budi Santoso</a></h1>
-      </div>
+    <aside>
+      <figure>
+        <div id="avatar"></div>
+        <figcaption>Eka Wahyu Budi Santoso</figcaption>
+      </figure>
+      <img src="assets/img/menu-button.png" alt="Menu">
       <nav>
         <ul>
-          <li><a href="https://www.ekawahyubudisantoso.web.id/">Home</a></li>
-          <li><a href="">About</a></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">About me</a></li>
+          <li><a href="">Portofolio</a></li>
           <li><a href="">Contact</a></li>
-          <li><a href="https://www.ekawahyubudisantoso.web.id/blog/">Blog</a></li>
+          <li><a href="">Blog</a></li>
         </ul>
       </nav>
-    </header>
+    </aside>
     <main>
-      
+        <h1>I'm a web developer</h1>
+        <p>You design this thing and then make it a reality in the browser, oh yeah.. Imagine the possibilities of your new skill.</p>
     </main>
+    <script>
+      (function(){
+        var menu = document.querySelector('ul'),
+        menulink = document.querySelector('img');
+
+        menulink.addEventListener('click', function(e){
+          menu.classList.toggle('active');
+          e.preventDefault();
+        });
+      })();
+    </script>
   </body>
 </html>

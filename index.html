@@ -1,12 +1,15 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html amp lang="id">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <title>Eka Wahyu Budi Santoso</title>
+  <link rel="canonical" href="https://www.ekawahyubudisantoso.web.id/">
   <link rel="icon" href="assets/fav/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#bdc3c7">
+  <meta name="theme-color" content="#b800fe">
   <meta name="description" content="Blog Resmi Eka Wahyu Budi Santoso - Pecinta blogger, acara, humor, program, open source dan juga windows.">
   <link href='https://ekawahyubudisantoso.web.id/' hreflang='x-default' rel='alternate'/>
   <link href='https://plus.google.com/u/0/+EkaWahyuBudiSantoso313/posts' rel='publisher'/>
@@ -18,40 +21,89 @@
   <meta content='id' name='geo.country'/>
   <meta content='global' name='distribution'/>
   <meta content='indonesian' name='language'/>
-  <link rel="stylesheet" type="text/css" media="screen" href="assets/css/main.css">
-  <script src="main.js"></script>
-  </head>
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,700">
+  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+  <style amp-custom>
+    body, html{
+      height: calc(100% - 2em);
+      margin: 0;
+      font-family: 'Montserrat';
+    }
+    header{
+      background: #b800fe;      
+      color: white;
+      display: grid;
+      grid-template-columns: auto 40px;
+      padding: 1em;
+    }
+    .site-name{
+      width: 100%;
+      font-size: 20px;
+      font-weight: bold;
+      padding: 10px;
+    }
+    .site-name a{
+      text-decoration: none;
+      color: white;
+    }
+    .hamburger {
+      width: 100%;
+      height: 100%;
+      padding-left: 10px;
+      text-decoration: none;
+      font-size: 30px;
+    }
+    .hamburger:hover{
+      cursor: pointer;
+    }
+    .sidebar {
+      width: 100%;
+      padding: 0px;
+      margin: 0;
+    }
+    .sidebar > li {
+      list-style: none;
+      
+    }
+    .sidebar a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: .8em;
+      display: block;
+      padding: 1.5em 3em;
+      color: black;
+    }
+    .sidebar a:hover{
+      cursor: pointer;
+      background-color: rgba(255, 255, 2555, .35);
+    }
+    .close-sidebar {
+      width: 25px;
+      font-size: 30px;
+      padding-left: 5px;
+    }
+    .close-sidebar:hover{
+      cursor: pointer;
+    }
+  </style>
+</head>
   <body>
-    <aside>
-      <figure>
-        <div id="avatar"></div>
-        <figcaption>Eka Wahyu Budi Santoso</figcaption>
-      </figure>
-      <img src="assets/img/menu-button.png" alt="Menu">
-      <nav>
-        <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">About me</a></li>
-          <li><a href="">Portofolio</a></li>
-          <li><a href="">Contact</a></li>
-          <li><a href="">Blog</a></li>
+    <header class="headerbar">
+        <div class="site-name"><a href="">Eka Wahyu Budi Santoso</a></div>
+        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
+    </header>
+    <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
+        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
+        <ul class="sidebar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">Portofolio</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
         </ul>
-      </nav>
-    </aside>
+    </amp-sidebar>
     <main>
-        <h1>I'm a web developer</h1>
-        <p>You design this thing and then make it a reality in the browser, oh yeah.. Imagine the possibilities of your new skill.</p>
+        
     </main>
-    <script>
-      (function(){
-        var menu = document.querySelector('ul'),
-        menulink = document.querySelector('img');
-
-        menulink.addEventListener('click', function(e){
-          menu.classList.toggle('active');
-          e.preventDefault();
-        });
-      })();
-    </script>
   </body>
 </html>

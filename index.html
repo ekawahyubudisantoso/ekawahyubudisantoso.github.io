@@ -1,9 +1,7 @@
 <!doctype html>
-<html amp lang="id">
+<html lang="id">
 <head>
   <meta charset="utf-8">
-  <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
   <title>Eka Wahyu Budi Santoso</title>
   <link rel="canonical" href="https://www.ekawahyubudisantoso.web.id/">
   <link rel="icon" href="https://www.ekawahyubudisantoso.web.id/assets/fav/favicon.ico">
@@ -22,93 +20,73 @@
   <meta content='global' name='distribution'/>
   <meta content='indonesian' name='language'/>
   <meta name="google-site-verification" content="Cmq9GU33ifi67HexkDU5KWyaKfR0a_XTJSIL6jVuCWs" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat">
-  <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
-  <style amp-custom>
-    body, html{
-      height: calc(100% - 2em);
-      margin: 0;
-      font-family: 'Montserrat';
-    }
-    header{
-      background: #b800fe;      
-      color: white;
-      display: grid;
-      grid-template-columns: auto 40px;
-      padding: 1em;
-    }
-    .site-name{
-      width: 100%;
-      padding: 10px;
-    }
-    .site-name a{
-      text-decoration: none;
-      font-size: 17px;
-      font-weight: bold;
-      color: white;
-    }
-    .hamburger {
-      width: 100%;
-      height: 100%;
-      padding-left: 10px;
-      text-decoration: none;
-      font-size: 30px;
-      color: white;
-    }
-    .hamburger:hover{
-      cursor: pointer;
-    }
-    amp-sidebar{
-      width: 300px;
-    }
-    .sidebar {
-      width: 100%;
-      padding: 0px;
-      margin: 0;
-    }
-    .sidebar > li {
-      list-style: none;
-      
-    }
-    .sidebar a {
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size: .8em;
-      display: block;
-      padding: 1.5em 3em;
-      color: black;
-    }
-    .sidebar a:hover{
-      cursor: pointer;
-      background-color: rgba(255, 255, 2555, .35);
-    }
-    .close-sidebar {
-      width: 25px;
-      font-size: 30px;
-      padding-left: 5px;
-    }
-    .close-sidebar:hover{
-      cursor: pointer;
-    }
-  </style>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
   <body>
-    <header class="headerbar">
-        <div class="site-name"><a href="https://www.ekawahyubudisantoso.web.id/">Eka Wahyu Budi Santoso</a></div>
-        <div role="button" on="tap:sidebar1.toggle" tabindex="0" class="hamburger">☰</div>
-    </header>
-    <amp-sidebar id="sidebar1" layout="nodisplay" side="right">
-        <div role="button" aria-label="close sidebar" on="tap:sidebar1.toggle" tabindex="0" class="close-sidebar">✕</div>
-        <ul class="sidebar">
-            <li><a href="https://www.ekawahyubudisantoso.web.id/">Home</a></li>
-            <li><a href="https://www.ekawahyubudisantoso.web.id/about/">About me</a></li>
-            <li><a href="https://www.ekawahyubudisantoso.web.id/portofolio/">Portofolio</a></li>
-            <li><a href="https://www.ekawahyubudisantoso.web.id/contact/">Contact</a></li>
-            <li><a href="https://www.ekawahyubudisantoso.web.id/blog/">Blog</a></li>
-        </ul>
-    </amp-sidebar>
-    <main>
-
-    </main>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="#!" class="brand-logo">Tapak Budi</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">About</a></li>
+            <li><a href="badges.html">Portofolio</a></li>
+            <li><a href="collapsible.html">Contact</a></li>
+            <li><a href="mobile.html">Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="sass.html">About</a></li>
+      <li><a href="badges.html">Portofolio</a></li>
+      <li><a href="collapsible.html">Contact</a></li>
+      <li><a href="mobile.html">Blog</a></li>
+    </ul>
+    <div class="container">
+      <div class="row">
+        <div class="col l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/img/developer.svg">
+              <span class="card-title">Programming</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/img/developer.svg">
+              <span class="card-title">Programming</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col l4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/img/developer.svg">
+              <span class="card-title">Programming</span>
+              <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">arrow_forward</i></a>
+            </div>
+            <div class="card-content">
+              <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="assets/js/style.js"></script>
   </body>
 </html>

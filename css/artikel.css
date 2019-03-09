@@ -1,1 +1,3 @@
 @font-face{font-family:'Bree Serif';font-style:normal;font-weight:400;src:local('Bree Serif Regular'),local('BreeSerif-Regular'),url(https://fonts.gstatic.com/s/breeserif/v8/4UaHrEJCrhhnVA3DgluA96rp4g.ttf) format('truetype')}body{font-size: 16px;}blockquote,p{font-size:120%}h2{font-family:'Bree Serif',serif;font-size:220%}
+blockquote{background:#34495e;position:relative;padding:55px 20px 20px 20px;color:#fff;margin:10px 0;border-radius:3px}
+blockquote:before{position:absolute;content:&#39;Catatan&#39;;background:rgba(255,255,255,1);right:3px;left:3px;top:3px;padding:5px 20px;display:block;font-weight:700;border-radius:3px 3px 0 0;color:#134574}
